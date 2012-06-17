@@ -1,0 +1,17 @@
+---
+wordpress_id: RB-333
+layout: post
+title: test
+---
+
+Blog goes here.
+{% highlight ruby %}
+# This is a comment
+class Test
+  @testingalongname = "Something here"
+  CONSTANT = 2323
+  def test
+    return (1*5)
+  end
+end
+{% endhighlight %}
