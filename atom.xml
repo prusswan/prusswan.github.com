@@ -5,25 +5,25 @@ title: atom feed
 
 <?xml version="1.0" encoding="iso-8859-1"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>The Life of a Radar</title>
- <link href="http://ryanbigg.com/atom.xml" rel="self"/>
- <link href="http://ryanbigg.com"/>
+
+ <title>The Life of a ...</title>
+ <link href="http://prusswan.github.com/atom.xml" rel="self"/>
+ <link href="http://prusswan.github.com"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://ryanbigg.com/</id>
+ <id>http://prusswan.github.com/</id>
  <author>
-   <name>Ryan Bigg</name>
-   <email>radarlistener@gmail.com</email>
+   <name>prusswan</name>
+   <email>prusswan-at-gmail.com</email>
  </author>
 
  {% for post in site.posts limit:20 %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
-   <link href="http://ryanbigg.com{{ post.url }}"/>
+   <link href="http://prusswan.github.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://ryanbigg.com{{ post.id }}</id>
+   <id>http://prusswan.github.com{{ post.id }}</id>
    <content type="html"><![CDATA[{{ post.content }}]]></content>
  </entry>
  {% endfor %}
- 
+
 </feed>
